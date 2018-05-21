@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    z-index: 1;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-right: 20px;
+}
+
+.form {
+    background-color: white;
+    width: 40%;
+    min-height: 60%;
+    z-index: 5;
+    border-radius: 5px;
+    Box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.numberform {
+    display: flex;
+}
+
+.h1 {
+    padding-top: 15px;
+    padding-left: 18px;
+    font-size: 28px;
+}
+
+.h5 {
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+p {
+    margin-left: 7px;
+}
+
+input {
+    display: flex;
+    align-content: center;
+    margin: 10px;
+    margin-left: 40px;
+    padding: 10px 8px;
+    border-radius: 5px;
+    border: .5px solid #eee;
+    flex-direction: column;
+    width: 80%;
+    font-size: 14px;
+    color: #bbb;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: #bbb;
+}
+
+#addbutton {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    padding: 10px 0px 10px;
+    width: 80%;
+    border: none;
+    background-color: #ff1493;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #eee;
+    cursor: pointer;
+}
+
+#completebutton {
+    border: 1px solid #ff1493;
+    background-color: white;
+    color: #ff1493;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 8px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.material-icons {
+    cursor: pointer;
+}
+
+.tooltip {
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after {
+    display: flex;
+    align-content: center;
+    background: #778899;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    background: rgba(0,0,0,#778899);
+    bottom: 38px;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 98;
+    width: 90px;
+    opacity: 0.85;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #778899 transparent;
+    border-width: 10px 8px 0 6px;
+    bottom: 28px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+    opacity: 0.85;
+}
+
+.completed {
+    text-decoration: line-through;
+}
